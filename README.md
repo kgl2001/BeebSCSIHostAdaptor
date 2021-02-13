@@ -1,10 +1,13 @@
-# BeebSCSIHost
-SCSI Host Adaptor that allows BBC &amp; Master Computers to interface with various SCSI Hard Disk Drives
+# BeebSCSIHostAdaptor
+SCSI Host Adaptor that allows BBC &amp; Master Computers to interface with various SCSI Hard Disk Drives.
+
+Please refer to the following discussion on Stardot for further details:
 
 ## Author
 
-BeebSCSIHost is developed and maintained by Ken Lowe.
-The design is based on the BeebSCSI project by Simon Innes: https://github.com/simoninns/BeebSCSI
+BeebSCSIHostAdaptor is developed and maintained by Ken Lowe.
+
+The design is based on the BeebSCSI project by Simon Inns: https://github.com/simoninns/BeebSCSI
 
 ## Software License (GPLv3)
 

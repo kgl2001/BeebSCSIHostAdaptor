@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SCSIConnector)(type KiCad)(uri ${KIPRJMOD}/SCSIConnector.pretty)(options "")(descr ""))
+)

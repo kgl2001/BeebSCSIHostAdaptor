@@ -1,0 +1,329 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+IRQ <= ((irqFirstStageQ AND IRQ)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (irqFirstStageQ AND NOT scsi_nREQ));
+</td></tr><tr><td>
+</td></tr><tr><td>
+addressDecoder/nFC40RD_and0000/addressDecoder/nFC40RD_and0000_D2 <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+addressDecoder/nFC40WR_and0000/addressDecoder/nFC40WR_and0000_D2__$INT <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(0) <= ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	status_out(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(0).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(0) <= bbc_DATA_I(0) when bbc_DATA_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(0) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(1) <= ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	status_out(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(1).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(1) <= bbc_DATA_I(1) when bbc_DATA_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(1) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(2) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(2).PIN);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(2) <= bbc_DATA_I(2) when bbc_DATA_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(2) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(3) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(3).PIN);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(3) <= bbc_DATA_I(3) when bbc_DATA_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(3) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(4) <= ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	status_out(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(4).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(4) <= bbc_DATA_I(4) when bbc_DATA_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(4) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(5) <= ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	status_out(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(5).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(5) <= bbc_DATA_I(5) when bbc_DATA_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(5) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(6) <= ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	status_out(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(6).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(6) <= bbc_DATA_I(6) when bbc_DATA_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(6) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_DATA_I(7) <= ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	status_out(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT scsi_nDATA(7).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA(7) <= bbc_DATA_I(7) when bbc_DATA_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_DATA_OE(7) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND NOT bbc_ADDRESS(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+</td></tr><tr><td>
+bbc_nIRQ_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_nIRQ <= bbc_nIRQ_I when bbc_nIRQ_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbc_nIRQ_OE <= IRQ;
+</td></tr><tr><td>
+FDCPE_cleanPGFC: FDCPE port map (cleanPGFC,NOT bbc_nPGFC,bbc_1MHZE,bbc_nPGFC,'0');
+</td></tr><tr><td>
+FDCPE_dataInLatchQ0: FDCPE port map (dataInLatchQ(0),bbc_DATA(0).PIN,dataInLatchQ_C(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(0) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ1: FDCPE port map (dataInLatchQ(1),bbc_DATA(1).PIN,dataInLatchQ_C(1),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(1) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ2: FDCPE port map (dataInLatchQ(2),bbc_DATA(2).PIN,dataInLatchQ_C(2),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(2) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ3: FDCPE port map (dataInLatchQ(3),bbc_DATA(3).PIN,dataInLatchQ_C(3),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(3) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ4: FDCPE port map (dataInLatchQ(4),bbc_DATA(4).PIN,dataInLatchQ_C(4),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(4) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ5: FDCPE port map (dataInLatchQ(5),bbc_DATA(5).PIN,dataInLatchQ_C(5),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(5) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ6: FDCPE port map (dataInLatchQ(6),bbc_DATA(6).PIN,dataInLatchQ_C(6),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(6) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_dataInLatchQ7: FDCPE port map (dataInLatchQ(7),bbc_DATA(7).PIN,dataInLatchQ_C(7),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataInLatchQ_C(7) <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+FDCPE_irqFirstStageQ: FDCPE port map (irqFirstStageQ,bbc_DATA(0).PIN,irqFirstStageQ_C,NOT bbc_nRST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;irqFirstStageQ_C <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(0) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(1) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(2) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(3) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(4) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(5) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(6) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(7) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(8) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(9) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(10) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(11) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(12) <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+pins01_64(13) <= '0';
+</td></tr><tr><td>
+FDCPE_scsi_ACK: FDCPE port map (scsi_ACK,'1',scsi_ACK_C,scsi_nREQ,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_ACK_C <= (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT addressDecoder/nFC40WR_and0000/addressDecoder/nFC40WR_and0000_D2__$INT AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT addressDecoder/nFC40RD_and0000/addressDecoder/nFC40RD_and0000_D2);
+</td></tr><tr><td>
+FDCPE_scsi_SEL: FDCPE port map (scsi_SEL,'1',scsi_SEL_C,NOT selLogicClr/selLogicClr_D2__$INT,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_SEL_C <= NOT ((NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(0) AND NOT bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC));
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nACK_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nACK <= scsi_nACK_I when scsi_nACK_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nACK_OE <= scsi_ACK;
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(0) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(0) <= scsi_nDATA_I(0) when scsi_nDATA_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(0) <= (dataInLatchQ(0) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(1) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(1) <= scsi_nDATA_I(1) when scsi_nDATA_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(1) <= (dataInLatchQ(1) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(2) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(2) <= scsi_nDATA_I(2) when scsi_nDATA_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(2) <= (dataInLatchQ(2) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(3) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(3) <= scsi_nDATA_I(3) when scsi_nDATA_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(3) <= (dataInLatchQ(3) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(4) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(4) <= scsi_nDATA_I(4) when scsi_nDATA_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(4) <= (dataInLatchQ(4) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(5) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(5) <= scsi_nDATA_I(5) when scsi_nDATA_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(5) <= (dataInLatchQ(5) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(6) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(6) <= scsi_nDATA_I(6) when scsi_nDATA_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(6) <= (dataInLatchQ(6) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nDATA_I(7) <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA(7) <= scsi_nDATA_I(7) when scsi_nDATA_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nDATA_OE(7) <= (dataInLatchQ(7) AND scsi_InO);
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nRST_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nRST <= scsi_nRST_I when scsi_nRST_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nRST_OE <= NOT bbc_nRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+scsi_nSEL_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nSEL <= scsi_nSEL_I when scsi_nSEL_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scsi_nSEL_OE <= scsi_SEL;
+</td></tr><tr><td>
+</td></tr><tr><td>
+selLogicClr/selLogicClr_D2__$INT <= (bbc_nRST AND scsi_nBSY);
+</td></tr><tr><td>
+FDCPE_status_out0: FDCPE port map (status_out(0),NOT scsi_nMSG,status_out_C(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status_out_C(0) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+FDCPE_status_out1: FDCPE port map (status_out(1),NOT scsi_nBSY,status_out_C(1),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status_out_C(1) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+FDCPE_status_out4: FDCPE port map (status_out(4),IRQ,status_out_C(4),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status_out_C(4) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+FDCPE_status_out5: FDCPE port map (status_out(5),NOT scsi_nREQ,status_out_C(5),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status_out_C(5) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+FDCPE_status_out6: FDCPE port map (status_out(6),NOT scsi_InO,status_out_C(6),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status_out_C(6) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+FDCPE_status_out7: FDCPE port map (status_out(7),NOT scsi_CnD,status_out_C(7),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status_out_C(7) <= (NOT bbc_ADDRESS(4) AND NOT bbc_ADDRESS(2) AND NOT bbc_ADDRESS(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bbc_ADDRESS(0) AND bbc_RnW AND bbc_ADDRESS(6) AND bbc_1MHZE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bbc_ADDRESS(7) AND NOT bbc_ADDRESS(5) AND NOT bbc_ADDRESS(3) AND cleanPGFC);
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

@@ -1,0 +1,93 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 2-13-2021  4:48PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  SCSIAdaptor.ngd
+output file: SCSIAdaptor_pad.csv
+Part type:   xc9572xl
+Speed grade: -10
+Package:     vq64
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,TIE,,I/O,,,,,,,,,,
+P2,bbc_DATA<7>,I/O,I/O/GTS2,BIDIR,,,,,,,,,
+P3,VCC,,VCCINT,,,,,,,,,,
+P4,bbc_DATA<6>,I/O,I/O,BIDIR,,,,,,,,,
+P5,bbc_DATA<5>,I/O,I/O/GTS1,BIDIR,,,,,,,,,
+P6,bbc_DATA<4>,I/O,I/O,BIDIR,,,,,,,,,
+P7,bbc_DATA<3>,I/O,I/O,BIDIR,,,,,,,,,
+P8,bbc_DATA<2>,I/O,I/O,BIDIR,,,,,,,,,
+P9,bbc_DATA<1>,I/O,I/O,BIDIR,,,,,,,,,
+P10,bbc_DATA<0>,I/O,I/O,BIDIR,,,,,,,,,
+P11,bbc_nRST,I,I/O,INPUT,,,,,,,,,
+P12,bbc_nPGFC,I,I/O,INPUT,,,,,,,,,
+P13,bbc_nIRQ,O,I/O,OUTPUT,,,,,,,,,
+P14,GND,,GND,,,,,,,,,,
+P15,bbc_1MHZE,GCK/I,I/O/GCK1,,,,,,,,,,
+P16,bbc_RnW,I,I/O/GCK2,INPUT,,,,,,,,,
+P17,pins01_64<0>,O,I/O/GCK3,OUTPUT,,,,,,,,,
+P18,pins01_64<1>,O,I/O,OUTPUT,,,,,,,,,
+P19,pins01_64<2>,O,I/O,OUTPUT,,,,,,,,,
+P20,pins01_64<3>,O,I/O,OUTPUT,,,,,,,,,
+P21,GND,,GND,,,,,,,,,,
+P22,pins01_64<4>,O,I/O,OUTPUT,,,,,,,,,
+P23,pins01_64<5>,O,I/O,OUTPUT,,,,,,,,,
+P24,pins01_64<6>,O,I/O,OUTPUT,,,,,,,,,
+P25,pins01_64<7>,O,I/O,OUTPUT,,,,,,,,,
+P26,VCC,,VCCIO,,,,,,,,,,
+P27,pins01_64<8>,O,I/O,OUTPUT,,,,,,,,,
+P28,TDI,,TDI,,,,,,,,,,
+P29,TMS,,TMS,,,,,,,,,,
+P30,TCK,,TCK,,,,,,,,,,
+P31,scsi_InO,I,I/O,INPUT,,,,,,,,,
+P32,scsi_nREQ,I,I/O,INPUT,,,,,,,,,
+P33,scsi_CnD,I,I/O,INPUT,,,,,,,,,
+P34,scsi_nSEL,O,I/O,OUTPUT,,,,,,,,,
+P35,scsi_nMSG,I,I/O,INPUT,,,,,,,,,
+P36,scsi_nBSY,I,I/O,INPUT,,,,,,,,,
+P37,VCC,,VCCINT,,,,,,,,,,
+P38,scsi_nRST,O,I/O,OUTPUT,,,,,,,,,
+P39,scsi_nACK,O,I/O,OUTPUT,,,,,,,,,
+P40,scsi_nDATA<7>,I/O,I/O,BIDIR,,,,,,,,,
+P41,GND,,GND,,,,,,,,,,
+P42,scsi_nDATA<6>,I/O,I/O,BIDIR,,,,,,,,,
+P43,scsi_nDATA<5>,I/O,I/O,BIDIR,,,,,,,,,
+P44,scsi_nDATA<4>,I/O,I/O,BIDIR,,,,,,,,,
+P45,scsi_nDATA<3>,I/O,I/O,BIDIR,,,,,,,,,
+P46,scsi_nDATA<2>,I/O,I/O,BIDIR,,,,,,,,,
+P47,scsi_nDATA<1>,I/O,I/O,BIDIR,,,,,,,,,
+P48,scsi_nDATA<0>,I/O,I/O,BIDIR,,,,,,,,,
+P49,pins01_64<9>,O,I/O,OUTPUT,,,,,,,,,
+P50,pins01_64<10>,O,I/O,OUTPUT,,,,,,,,,
+P51,pins01_64<11>,O,I/O,OUTPUT,,,,,,,,,
+P52,pins01_64<12>,O,I/O,OUTPUT,,,,,,,,,
+P53,TDO,,TDO,,,,,,,,,,
+P54,GND,,GND,,,,,,,,,,
+P55,VCC,,VCCIO,,,,,,,,,,
+P56,pins01_64<13>,O,I/O,OUTPUT,,,,,,,,,
+P57,bbc_ADDRESS<7>,I,I/O,INPUT,,,,,,,,,
+P58,bbc_ADDRESS<6>,I,I/O,INPUT,,,,,,,,,
+P59,bbc_ADDRESS<5>,I,I/O,INPUT,,,,,,,,,
+P60,bbc_ADDRESS<4>,I,I/O,INPUT,,,,,,,,,
+P61,bbc_ADDRESS<3>,I,I/O,INPUT,,,,,,,,,
+P62,bbc_ADDRESS<2>,I,I/O,INPUT,,,,,,,,,
+P63,bbc_ADDRESS<1>,I,I/O,INPUT,,,,,,,,,
+P64,bbc_ADDRESS<0>,I,I/O/GSR,INPUT,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

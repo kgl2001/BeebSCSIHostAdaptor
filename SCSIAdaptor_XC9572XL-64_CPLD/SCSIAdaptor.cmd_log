@@ -1,0 +1,450 @@
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+taengine -intstyle ise -f SCSIAdaptor -w --format html1 -l SCSIAdaptor_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate float SCSIAdaptor.ngd 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+taengine -intstyle ise -f SCSIAdaptor -w --format html1 -l SCSIAdaptor_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc95144xl-TQ100-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 SCSIAdaptor.ngc SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew slow -init low -nomlopt -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -nomlopt -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64 - Test2/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64 - Test2/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 "SCSIAdaptor.ngc" SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -nomlopt -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64 - Test2/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64 - Test2/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 "SCSIAdaptor.ngc" SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -nomlopt -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 
+xst -intstyle ise -ifn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64 - Test2/SCSIAdaptor.xst" -ofn "C:/Xilinx/Projects/SCSIAdaptor_XC9572XL-64 - Test2/SCSIAdaptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc SCSIAdaptor.ucf -p xc9572xl-VQ64-10 "SCSIAdaptor.ngc" SCSIAdaptor.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -nomlopt -inputs 54 -pterms 25 -unused float -power std -terminate keeper SCSIAdaptor.ngd 
+XSLTProcess SCSIAdaptor_build.xml 
+tsim -intstyle ise SCSIAdaptor SCSIAdaptor.nga 
+taengine -intstyle ise -f SCSIAdaptor -w --format html1 -l SCSIAdaptor_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n SCSIAdaptor -i SCSIAdaptor 

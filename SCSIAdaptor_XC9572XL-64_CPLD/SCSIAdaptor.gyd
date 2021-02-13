@@ -1,0 +1,81 @@
+Pin Freeze File:  version P.20131013
+
+9572XL64 XC9572XL-10-VQ64
+bbc_1MHZE S:PIN15
+bbc_ADDRESS<0> S:PIN64
+bbc_ADDRESS<1> S:PIN63
+bbc_ADDRESS<2> S:PIN62
+bbc_ADDRESS<3> S:PIN61
+bbc_ADDRESS<4> S:PIN60
+bbc_ADDRESS<5> S:PIN59
+bbc_ADDRESS<6> S:PIN58
+bbc_ADDRESS<7> S:PIN57
+bbc_RnW S:PIN16
+bbc_nPGFC S:PIN12
+bbc_nRST S:PIN11
+scsi_CnD S:PIN33
+scsi_InO S:PIN31
+scsi_nBSY S:PIN36
+scsi_nMSG S:PIN35
+scsi_nREQ S:PIN32
+bbc_DATA<0> S:PIN10
+bbc_DATA<1> S:PIN9
+bbc_DATA<2> S:PIN8
+bbc_DATA<3> S:PIN7
+bbc_DATA<4> S:PIN6
+bbc_DATA<5> S:PIN5
+bbc_DATA<6> S:PIN4
+bbc_DATA<7> S:PIN2
+scsi_nSEL S:PIN34
+scsi_nRST S:PIN38
+scsi_nDATA<7> S:PIN40
+pins01_64<9> S:PIN49
+pins01_64<8> S:PIN27
+pins01_64<7> S:PIN25
+pins01_64<6> S:PIN24
+pins01_64<5> S:PIN23
+pins01_64<4> S:PIN22
+pins01_64<3> S:PIN20
+pins01_64<2> S:PIN19
+pins01_64<1> S:PIN18
+pins01_64<13> S:PIN56
+scsi_nDATA<6> S:PIN42
+pins01_64<12> S:PIN52
+pins01_64<11> S:PIN51
+pins01_64<10> S:PIN50
+pins01_64<0> S:PIN17
+bbc_nIRQ S:PIN13
+scsi_nDATA<5> S:PIN43
+scsi_nDATA<4> S:PIN44
+scsi_nDATA<3> S:PIN45
+scsi_nDATA<2> S:PIN46
+scsi_nDATA<1> S:PIN47
+scsi_nDATA<0> S:PIN48
+scsi_nACK S:PIN39
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 status_out<7> bbc_DATA_out<2> status_out<6> pins01_64_0_OBUF$BUF24
+		 bbc_DATA_out<1> bbc_DATA_out<0> status_out<5> status_out<4>
+		 status_out<1> pins01_64_0_OBUF$BUF18 status_out<0> pins01_64_0_OBUF$BUF14
+		 dataInLatchQ<7> pins01_64_0_OBUF$BUF23 pins01_64_0_OBUF$BUF17 dataInLatchQ<6>
+		 pins01_64_0_OBUF$BUF16 IRQ
+PARTITION FB2_4 addressDecoder/nFC40WR_and0000/addressDecoder/nFC40WR_and0000_D2__$INT addressDecoder/nFC40RD_and0000/addressDecoder/nFC40RD_and0000_D2 scsi_SEL dataInLatchQ<5>
+		 dataInLatchQ<4> dataInLatchQ<3> dataInLatchQ<2> bbc_DATA_out<7>
+		 bbc_DATA_out<6> dataInLatchQ<1> bbc_DATA_out<5> bbc_DATA_out<4>
+		 dataInLatchQ<0> bbc_DATA_out<3> irqFirstStageQ
+PARTITION FB3_2 pins01_64_0_OBUF$BUF15
+PARTITION FB3_5 pins01_64_0_OBUF$BUF13 pins01_64_0_OBUF
+PARTITION FB3_8 pins01_64_0_OBUF$BUF12 pins01_64_0_OBUF$BUF11 pins01_64_0_OBUF$BUF9
+PARTITION FB3_12 pins01_64_0_OBUF$BUF1
+PARTITION FB3_16 pins01_64_0_OBUF$BUF2 pins01_64_0_OBUF$BUF0
+
+PARTITION FB4_2 pins01_64_0_OBUF$BUF3 pins01_64_0_OBUF$BUF6 pins01_64_0_OBUF$BUF7 pins01_64_0_OBUF$BUF4
+		 pins01_64_0_OBUF$BUF10
+PARTITION FB4_8 pins01_64_0_OBUF$BUF5
+PARTITION FB4_10 pins01_64_0_OBUF$BUF21 pins01_64_0_OBUF$BUF8 pins01_64_0_OBUF$BUF20
+PARTITION FB4_14 pins01_64_0_OBUF$BUF22 pins01_64_0_OBUF$BUF19 selLogicClr/selLogicClr_D2__$INT scsi_ACK
+		 cleanPGFC
+

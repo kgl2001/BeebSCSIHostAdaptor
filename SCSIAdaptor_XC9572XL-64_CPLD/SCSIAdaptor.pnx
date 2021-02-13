@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xc9500xl" device="XC9572XL" pkg="VQ64" spg="-10"/><pin dir="input" nm="bbc_ADDRESS&lt;4&gt;" no="60"/><pin dir="input" nm="bbc_ADDRESS&lt;2&gt;" no="62"/><pin dir="input" nm="bbc_ADDRESS&lt;1&gt;" no="63"/><pin dir="input" nm="bbc_ADDRESS&lt;0&gt;" no="64"/><pin dir="input" nm="bbc_RnW" no="16"/><pin dir="input" nm="bbc_ADDRESS&lt;6&gt;" no="58"/><pin dir="input" nm="bbc_1MHZE" no="15"/><pin dir="input" nm="bbc_ADDRESS&lt;3&gt;" no="61"/><pin dir="input" nm="bbc_ADDRESS&lt;5&gt;" no="59"/><pin dir="input" nm="bbc_ADDRESS&lt;7&gt;" no="57"/><pin dir="input" nm="bbc_nRST" no="11"/><pin dir="input" nm="bbc_nPGFC" no="12"/><pin dir="input" nm="scsi_nREQ" no="32"/><pin dir="input" nm="scsi_nMSG" no="35"/><pin dir="input" nm="scsi_nBSY" no="36"/><pin dir="input" nm="scsi_InO" no="31"/><pin dir="input" nm="scsi_CnD" no="33"/><pin dir="output" nm="scsi_nSEL" no="34" sr="fast"/><pin dir="output" nm="scsi_nRST" no="38" sr="fast"/><pin dir="output" nm="bbc_nIRQ" no="13" sr="fast"/><pin dir="output" nm="scsi_nACK" no="39" sr="fast"/><pin dir="output" nm="pins01_64&lt;9&gt;" no="49" sr="fast"/><pin dir="output" nm="pins01_64&lt;8&gt;" no="27" sr="fast"/><pin dir="output" nm="pins01_64&lt;7&gt;" no="25" sr="fast"/><pin dir="output" nm="pins01_64&lt;6&gt;" no="24" sr="fast"/><pin dir="output" nm="pins01_64&lt;5&gt;" no="23" sr="fast"/><pin dir="output" nm="pins01_64&lt;4&gt;" no="22" sr="fast"/><pin dir="output" nm="pins01_64&lt;3&gt;" no="20" sr="fast"/><pin dir="output" nm="pins01_64&lt;2&gt;" no="19" sr="fast"/><pin dir="output" nm="pins01_64&lt;1&gt;" no="18" sr="fast"/><pin dir="output" nm="pins01_64&lt;13&gt;" no="56" sr="fast"/><pin dir="output" nm="pins01_64&lt;12&gt;" no="52" sr="fast"/><pin dir="output" nm="pins01_64&lt;11&gt;" no="51" sr="fast"/><pin dir="output" nm="pins01_64&lt;10&gt;" no="50" sr="fast"/><pin dir="output" nm="pins01_64&lt;0&gt;" no="17" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;0&gt;" no="10" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;1&gt;" no="9" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;4&gt;" no="6" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;5&gt;" no="5" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;6&gt;" no="4" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;7&gt;" no="2" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;2&gt;" no="8" sr="fast"/><pin dir="bidir" nm="bbc_DATA&lt;3&gt;" no="7" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;7&gt;" no="40" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;6&gt;" no="42" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;5&gt;" no="43" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;4&gt;" no="44" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;3&gt;" no="45" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;2&gt;" no="46" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;1&gt;" no="47" sr="fast"/><pin dir="bidir" nm="scsi_nDATA&lt;0&gt;" no="48" sr="fast"/></ibis>

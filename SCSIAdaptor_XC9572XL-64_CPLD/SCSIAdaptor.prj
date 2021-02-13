@@ -1,0 +1,6 @@
+verilog work "ttl74573.v"
+verilog work "ttl74240.v"
+verilog work "SCSIAdaptorAddressDecoder.v"
+verilog work "inverterWithOutputEnable.v"
+verilog work "dff_asyncres.v"
+verilog work "SCSIAdaptor.v"

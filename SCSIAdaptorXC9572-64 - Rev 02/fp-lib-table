@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SCSIAdaptor)(type KiCad)(uri ${KIPRJMOD}/SCSIAdaptor.pretty)(options "")(descr ""))
+  (lib (name Logos)(type KiCad)(uri "C:/Users/Ken Lowe/Documents/Kicad/BeebSCSI_Board/Logos.pretty")(options "")(descr ""))
+)

@@ -1,7 +1,7 @@
 # BeebSCSIHostAdaptor
 SCSI Host Adaptor that allows BBC &amp; Master Computers to interface with various SCSI Hard Disk Drives.
 
-Please refer to the following discussion on Stardot for further details:
+Please refer to the following discussion on Stardot for further details: https://stardot.org.uk/forums/viewtopic.php?f=3&t=18815
 
 ## Author
 

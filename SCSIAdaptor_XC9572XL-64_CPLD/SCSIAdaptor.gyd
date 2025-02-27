@@ -1,81 +1,81 @@
 Pin Freeze File:  version P.20131013
 
 9572XL64 XC9572XL-10-VQ64
+bbc_INTnEXT S:PIN1
+scsi_nATN S:PIN51
+base_ADDRESS<0> S:PIN20
+base_ADDRESS<1> S:PIN19
 bbc_1MHZE S:PIN15
-bbc_ADDRESS<0> S:PIN64
-bbc_ADDRESS<1> S:PIN63
-bbc_ADDRESS<2> S:PIN62
-bbc_ADDRESS<3> S:PIN61
+bbc_ADDRESS<0> S:PIN56
+bbc_ADDRESS<1> S:PIN57
+bbc_ADDRESS<2> S:PIN58
+bbc_ADDRESS<3> S:PIN59
 bbc_ADDRESS<4> S:PIN60
-bbc_ADDRESS<5> S:PIN59
-bbc_ADDRESS<6> S:PIN58
-bbc_ADDRESS<7> S:PIN57
-bbc_RnW S:PIN16
+bbc_ADDRESS<5> S:PIN61
+bbc_ADDRESS<6> S:PIN62
+bbc_ADDRESS<7> S:PIN63
+bbc_RnW S:PIN18
 bbc_nPGFC S:PIN12
-bbc_nRST S:PIN11
-scsi_CnD S:PIN33
-scsi_InO S:PIN31
-scsi_nBSY S:PIN36
-scsi_nMSG S:PIN35
+bbc_nRST S:PIN64
+scsi_CnD S:PIN34
+scsi_InO S:PIN33
+scsi_nBSY S:PIN35
+scsi_nMSG S:PIN31
 scsi_nREQ S:PIN32
-bbc_DATA<0> S:PIN10
-bbc_DATA<1> S:PIN9
-bbc_DATA<2> S:PIN8
-bbc_DATA<3> S:PIN7
-bbc_DATA<4> S:PIN6
-bbc_DATA<5> S:PIN5
-bbc_DATA<6> S:PIN4
-bbc_DATA<7> S:PIN2
-scsi_nSEL S:PIN34
+TP<1> S:PIN16
+TP<2> S:PIN17
+scsi_nSEL S:PIN39
 scsi_nRST S:PIN38
-scsi_nDATA<7> S:PIN40
-pins01_64<9> S:PIN49
-pins01_64<8> S:PIN27
-pins01_64<7> S:PIN25
-pins01_64<6> S:PIN24
-pins01_64<5> S:PIN23
-pins01_64<4> S:PIN22
-pins01_64<3> S:PIN20
-pins01_64<2> S:PIN19
-pins01_64<1> S:PIN18
-pins01_64<13> S:PIN56
-scsi_nDATA<6> S:PIN42
-pins01_64<12> S:PIN52
-pins01_64<11> S:PIN51
-pins01_64<10> S:PIN50
-pins01_64<0> S:PIN17
+scsi_nDBP<1> S:PIN50
+scsi_nDATA<0> S:PIN45
+scsi_nACK S:PIN36
+scsi_IC7_nGBA S:PIN27
+scsi_IC7_GAB S:PIN25
 bbc_nIRQ S:PIN13
-scsi_nDATA<5> S:PIN43
-scsi_nDATA<4> S:PIN44
-scsi_nDATA<3> S:PIN45
-scsi_nDATA<2> S:PIN46
-scsi_nDATA<1> S:PIN47
-scsi_nDATA<0> S:PIN48
-scsi_nACK S:PIN39
+TP<5> S:PIN52
+TP<4> S:PIN11
+TP<3> S:PIN23
+scsi_nDBP<0> S:PIN49
+scsi_nDATA<7> S:PIN48
+scsi_nDATA<6> S:PIN40
+scsi_nDATA<5> S:PIN42
+scsi_nDATA<4> S:PIN47
+scsi_nDATA<3> S:PIN46
+scsi_nDATA<2> S:PIN43
+scsi_nDATA<1> S:PIN44
+bbc_DATA<0> S:PIN2
+bbc_DATA<1> S:PIN4
+bbc_DATA<2> S:PIN5
+bbc_DATA<3> S:PIN6
+bbc_DATA<4> S:PIN7
+bbc_DATA<5> S:PIN8
+bbc_DATA<6> S:PIN9
+bbc_DATA<7> S:PIN10
+scsi_IC8_nGBA S:PIN22
+scsi_IC8_GAB S:PIN24
 
 
 ;The remaining section of the .gyd file is for documentation purposes only.
 ;It shows where your internal equations were placed in the last successful fit.
 
-PARTITION FB1_1 status_out<7> bbc_DATA_out<2> status_out<6> pins01_64_0_OBUF$BUF24
-		 bbc_DATA_out<1> bbc_DATA_out<0> status_out<5> status_out<4>
-		 status_out<1> pins01_64_0_OBUF$BUF18 status_out<0> pins01_64_0_OBUF$BUF14
-		 dataInLatchQ<7> pins01_64_0_OBUF$BUF23 pins01_64_0_OBUF$BUF17 dataInLatchQ<6>
-		 pins01_64_0_OBUF$BUF16 IRQ
-PARTITION FB2_4 addressDecoder/nFC40WR_and0000/addressDecoder/nFC40WR_and0000_D2__$INT addressDecoder/nFC40RD_and0000/addressDecoder/nFC40RD_and0000_D2 scsi_SEL dataInLatchQ<5>
-		 dataInLatchQ<4> dataInLatchQ<3> dataInLatchQ<2> bbc_DATA_out<7>
-		 bbc_DATA_out<6> dataInLatchQ<1> bbc_DATA_out<5> bbc_DATA_out<4>
-		 dataInLatchQ<0> bbc_DATA_out<3> irqFirstStageQ
-PARTITION FB3_2 pins01_64_0_OBUF$BUF15
-PARTITION FB3_5 pins01_64_0_OBUF$BUF13 pins01_64_0_OBUF
-PARTITION FB3_8 pins01_64_0_OBUF$BUF12 pins01_64_0_OBUF$BUF11 pins01_64_0_OBUF$BUF9
-PARTITION FB3_12 pins01_64_0_OBUF$BUF1
-PARTITION FB3_16 pins01_64_0_OBUF$BUF2 pins01_64_0_OBUF$BUF0
-
-PARTITION FB4_2 pins01_64_0_OBUF$BUF3 pins01_64_0_OBUF$BUF6 pins01_64_0_OBUF$BUF7 pins01_64_0_OBUF$BUF4
-		 pins01_64_0_OBUF$BUF10
-PARTITION FB4_8 pins01_64_0_OBUF$BUF5
-PARTITION FB4_10 pins01_64_0_OBUF$BUF21 pins01_64_0_OBUF$BUF8 pins01_64_0_OBUF$BUF20
-PARTITION FB4_14 pins01_64_0_OBUF$BUF22 pins01_64_0_OBUF$BUF19 selLogicClr/selLogicClr_D2__$INT scsi_ACK
-		 cleanPGFC
+PARTITION FB1_1 addressDecoder/nFC42WR_and0000/addressDecoder/nFC42WR_and0000_D2__$INT bbc_DATA_out<5> status_out<5> TP_3_OBUF$BUF14
+		 bbc_DATA_out<6> bbc_DATA_out<7> status_out<4> TP_3_OBUF$BUF16
+		 status_out<1> status_out<0> TP_1_OBUF$BUF0 TP_3_OBUF$BUF17
+		 addressDecoder/nFC43WR_and0000/addressDecoder/nFC43WR_and0000_D2__$INT TP_2_OBUF$BUF0 addressDecoder/nFC40WR_and0000/addressDecoder/nFC40WR_and0000_D2__$INT addressDecoder/nFC40RD_and0000/addressDecoder/nFC40RD_and0000_D2
+		 $OpTx$bbc_DATA_enable/bbc_DATA_enable_D2_INV$5 status_out<6>
+PARTITION FB2_1 EXP6_ Mxor_scsi_nDBP_0_xor0000_Mxor__xor0000__xor0001/Mxor_scsi_nDBP_0_xor0000_Mxor__xor0000__xor0001_D
+PARTITION FB2_6 status_out<7> scsi_ACK cleanPGFC Mxor_scsi_nDBP_0_xor0000_Mxor__xor0001__xor0001/Mxor_scsi_nDBP_0_xor0000_Mxor__xor0001__xor0001_D
+		 EXP7_ bbc_DATA_out<0> bbc_DATA_out<1> $OpTx$addressDecoder/nFC41RD_and000019/addressDecoder/nFC41RD_and000019_D2_INV$4
+		 bbc_DATA_out<2> bbc_DATA_out<3> $OpTx$addressDecoder/nFC41RD_and000018/addressDecoder/nFC41RD_and000018_D2_INV$3 bbc_DATA_out<4>
+		 scsi_nDBP_0_xor0000/scsi_nDBP_0_xor0000_D
+PARTITION FB3_2 scsi_IC8_GAB_OBUF$BUF0
+PARTITION FB3_5 scsi_IC8_GAB_OBUF$BUF1
+PARTITION FB3_8 TP_3_OBUF$BUF13 TP_3_OBUF$BUF12 TP_3_OBUF selLogicClr/selLogicClr_D2__$INT
+		 TP_3_OBUF$BUF4 irqFirstStageQ dataInLatchQ<7> TP_3_OBUF$BUF11
+		 TP_3_OBUF$BUF5 TP_3_OBUF$BUF0 dataInLatchQ<6>
+PARTITION FB4_1 scsi_SEL TP_3_OBUF$BUF8 TP_3_OBUF$BUF7 TP_3_OBUF$BUF6
+		 TP_3_OBUF$BUF9 TP_3_OBUF$BUF2 dataInLatchQ<5> TP_3_OBUF$BUF10
+		 dataInLatchQ<4> dataInLatchQ<3> TP_3_OBUF$BUF3 TP_3_OBUF$BUF15
+		 dataInLatchQ<2> TP_3_OBUF$BUF1 dataInLatchQ<1> dataInLatchQ<0>
+		 Mxor_scsi_nDBP_0_xor0000_Mxor__xor0001__xor0000/Mxor_scsi_nDBP_0_xor0000_Mxor__xor0001__xor0000_D IRQ
 

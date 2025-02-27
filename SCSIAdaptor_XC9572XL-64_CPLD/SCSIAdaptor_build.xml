@@ -5,7 +5,7 @@
 <design name='SCSIAdaptor'/>
 <rptdir name='SCSIAdaptor'/>
 <xilinx path='D:/xilinx/14.7/ISE_DS/ISE;'/>
-<projDir path='C:\Xilinx\Projects\SCSIAdaptor_XC9572XL-64 - Test2'/>
+<projDir path='C:\Xilinx\Projects\SCSIAdaptorV3R1_XC9572XL-64_CPLD'/>
 <xslDir path='chipviewer/data/xsl'/>
 <fileDir path='/chipviewer/data/html'/>
 <dataFile file='index.htm'/>

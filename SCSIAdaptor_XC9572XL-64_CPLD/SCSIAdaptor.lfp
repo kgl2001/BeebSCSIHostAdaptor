@@ -1,0 +1,5 @@
+# begin LFP file C:\Xilinx\Projects\SCSIAdaptorV3R1_XC9572XL-64_CPLD\SCSIAdaptor.lfp
+designfile SCSIAdaptor.v
+parttype xc9572xl-vq64-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

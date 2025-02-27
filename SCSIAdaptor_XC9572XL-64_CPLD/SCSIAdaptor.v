@@ -26,40 +26,62 @@
 ************************************************************************/
 	
 module SCSIAdaptor(
-	output [13:0] pins01_64,	// Set spare pins as output
-
 	// BBC micro host
 	input bbc_RnW,
 	input bbc_1MHZE,
 	output bbc_nIRQ,				
 	input bbc_nPGFC,
+	input bbc_INTnEXT,
 	input bbc_nRST,
 	inout [7:0] bbc_DATA,
 	input [7:0] bbc_ADDRESS,
+	input [1:0] base_ADDRESS,
 	
 	// SCSI device
+	// The host adaptor is calculating the databus parity bit and passing that
+	// to the drive. The CPLD is using 2 bits to increase sink capacity, as
+	// this parity bit is not passing through a hardware buffer. The parity bit
+	// is not being read from the drive.
+	// The nATN signal is wired as an input to the CPLD from the drive, but is
+	// not being used in the host adaptor logic.
+	output [1:0] scsi_nDBP,
+	output scsi_IC7_GAB,				
+	output scsi_IC7_nGBA,				
+	output scsi_IC8_GAB,				
+	output scsi_IC8_nGBA,				
 	output scsi_nSEL,				
 	output scsi_nACK,				
 	output scsi_nRST,				
 	input scsi_nMSG,
 	input scsi_nBSY,
 	input scsi_nREQ,
+	input scsi_nATN,
 	input scsi_InO,
 	input scsi_CnD,
-	inout [7:0] scsi_nDATA
+	inout [7:0] scsi_nDATA,
+
+	// Test points
+	output [5:1] TP
 	);
 
-	assign pins01_64 = 14'b0;	// Set spare outputs to 0
 
+	assign TP [1] = bbc_INTnEXT;      // bbc_INTnEXT is otherwise unused
+	assign TP [2] = scsi_nATN;        // scsi_nATN is otherwise unused
+	assign TP [5:3] = 3'b0;	          // Set remaining Test Point outputs to 0
 
+	assign scsi_IC7_GAB = 1'b0;       // Set IC7 direction B -> A
+	assign scsi_IC7_nGBA = 1'b0;      // Set IC7 direction B -> A
+	assign scsi_IC8_GAB = scsi_InO;   // Set IC8 direction based on scsi_InO
+	assign scsi_IC8_nGBA = scsi_InO;  // Set IC8 direction based on scsi_InO
+	
 	// The Acorn SCSI host adapter supports 5 commands.  Since we need to use these
 	// commands to control the databus enable logic we declare them first.
 	// BeebSCSI also implements an additional command for configuration (nFC44WR)
-	wire nFC40RD;	// (not) address FC40 read  = Read SCSI databus command
-	wire nFC41RD;	// (not) address FC41 read  = Read SCSI status byte command
-	wire nFC40WR;	// (not) address FC40 write = Write SCSI databus command
-	wire nFC42WR;	// (not) address FC42 write = Assert SCSI nSEL command
-	wire nFC43WR;	// (not) address FC43 write = Enable/Disable BBC nIRQ command
+	wire nFC40RD;	// (not) address FC40/4/8/C read  = Read SCSI databus command
+	wire nFC41RD;	// (not) address FC41/5/9/D read  = Read SCSI status byte command
+	wire nFC40WR;	// (not) address FC40/4/8/C write = Write SCSI databus command
+	wire nFC42WR;	// (not) address FC42/6/A/E write = Assert SCSI nSEL command
+	wire nFC43WR;	// (not) address FC43/7/B/F write = Enable/Disable BBC nIRQ command
 	
 	// If the device is connected to the internal 1 MHz bus of the Acorn Master
 	// only address lines A0-A3 are available (least significant nibble of address).
@@ -101,17 +123,23 @@ module SCSIAdaptor(
 	// used by ADFS to detect the presence of the host adapter, so we have
 	// to emulate it even if the logic isn't needed for the SCSI).
 	
-   assign scsi_nDATA[7] = (scsi_InO & ~scsi_nDATA_out[7]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[6] = (scsi_InO & ~scsi_nDATA_out[6]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[5] = (scsi_InO & ~scsi_nDATA_out[5]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[4] = (scsi_InO & ~scsi_nDATA_out[4]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[3] = (scsi_InO & ~scsi_nDATA_out[3]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[2] = (scsi_InO & ~scsi_nDATA_out[2]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[1] = (scsi_InO & ~scsi_nDATA_out[1]) ? 1'b0 : 1'bz;
-   assign scsi_nDATA[0] = (scsi_InO & ~scsi_nDATA_out[0]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[7] = (scsi_InO & ~scsi_nDATA_out[7]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[6] = (scsi_InO & ~scsi_nDATA_out[6]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[5] = (scsi_InO & ~scsi_nDATA_out[5]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[4] = (scsi_InO & ~scsi_nDATA_out[4]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[3] = (scsi_InO & ~scsi_nDATA_out[3]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[2] = (scsi_InO & ~scsi_nDATA_out[2]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[1] = (scsi_InO & ~scsi_nDATA_out[1]) ? 1'b0 : 1'bz;
+	assign scsi_nDATA[0] = (scsi_InO & ~scsi_nDATA_out[0]) ? 1'b0 : 1'bz;
 	
 	assign scsi_nDATA_in = scsi_nDATA;
 	
+	// The CPLD is using 2 bits to increase sink capacity, as this parity
+	// bit is not passing through a hardware buffer.
+	
+	assign scsi_nDBP[0] = ^scsi_nDATA ? 1'b0 : 1'bz;
+	assign scsi_nDBP[1] = ^scsi_nDATA ? 1'b0 : 1'bz;
+
 	// The Acorn host adapter passes the BBC host (not) reset directly to the
 	// SCSI bus
 
@@ -155,6 +183,7 @@ module SCSIAdaptor(
 	
 	SCSIAdaptorAddressDecoder addressDecoder(
 		.bbc_ADDRESS(commandAddress),
+		.base_ADDRESS(base_ADDRESS),
 		.cleanPGFC(cleanPGFC),
 		.n1MHZE(n1MHZE),
 		.nRW(nRW),

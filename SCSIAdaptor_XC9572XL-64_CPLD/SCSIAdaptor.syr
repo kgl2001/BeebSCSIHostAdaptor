@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.33 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 1.33 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: SCSIAdaptor.prj
 
@@ -172,10 +172,12 @@ Synthesizing Unit <SCSIAdaptor>.
     Found 1-bit tristate buffer for signal <bbc_nIRQ>.
     Found 1-bit tristate buffer for signal <scsi_nACK>.
     Found 8-bit tristate buffer for signal <scsi_nDATA>.
+    Found 2-bit tristate buffer for signal <scsi_nDBP>.
     Found 1-bit tristate buffer for signal <scsi_nRST>.
     Found 1-bit tristate buffer for signal <scsi_nSEL>.
+    Found 1-bit xor8 for signal <scsi_nDBP_0$xor0000> created at line 140.
     Summary:
-	inferred  20 Tristate(s).
+	inferred  22 Tristate(s).
 Unit <SCSIAdaptor> synthesized.
 
 
@@ -186,9 +188,11 @@ Macro Statistics
 # Registers                                            : 6
  1-bit register                                        : 4
  8-bit register                                        : 2
-# Tristates                                            : 13
- 1-bit tristate buffer                                 : 12
+# Tristates                                            : 15
+ 1-bit tristate buffer                                 : 14
  8-bit tristate buffer                                 : 1
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
 
 =========================================================================
 
@@ -205,13 +209,15 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Registers                                            : 4
  Flip-Flops                                            : 4
+# Xors                                                 : 1
+ 1-bit xor8                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit no_reduce_block1 : the following signal(s) form a combinatorial loop: SCSIAdaptor/IRQ, IRQ, pin3and4_and0000, SCSIAdaptor/pin3and4_and0000.
+WARNING:Xst:2170 - Unit no_reduce_block1 : the following signal(s) form a combinatorial loop: SCSIAdaptor/pin3and4_and0000, IRQ, pin3and4_and0000, SCSIAdaptor/IRQ.
 
 Optimizing unit <SCSIAdaptor> ...
   implementation constraint: NOREDUCE	 : IRQ
@@ -263,35 +269,36 @@ Clock Enable                       : YES
 wysiwyg                            : NO
 
 Design Statistics
-# IOs                              : 51
+# IOs                              : 52
 
 Cell Usage :
-# BELS                             : 178
-#      AND2                        : 52
-#      AND3                        : 10
-#      AND4                        : 7
-#      AND5                        : 1
+# BELS                             : 208
+#      AND2                        : 70
+#      AND3                        : 8
+#      AND4                        : 4
+#      AND5                        : 2
 #      GND                         : 1
-#      INV                         : 100
-#      OR2                         : 6
+#      INV                         : 101
+#      OR2                         : 14
 #      VCC                         : 1
+#      XOR2                        : 7
 # FlipFlops/Latches                : 18
 #      FD                          : 14
 #      FDC                         : 4
-# IO Buffers                       : 51
-#      IBUF                        : 17
+# IO Buffers                       : 52
+#      IBUF                        : 21
 #      IOBUFE                      : 16
-#      OBUF                        : 14
-#      OBUFE                       : 4
+#      OBUF                        : 9
+#      OBUFE                       : 6
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.37 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.30 secs
  
 --> 
 
-Total memory usage is 247948 kilobytes
+Total memory usage is 252940 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)
